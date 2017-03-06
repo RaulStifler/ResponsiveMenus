@@ -4,36 +4,40 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../miniFramework/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="style_menu.css">
+	<script src="../script/jquery.js"></script>
+	<script src="js/menu1.js"></script>
 	<title>Ubiquiti Menu Style</title>
 </head>
 <body>
-	<head>
+	<header>
 		<nav class="main_menu">
 			<a href="/">
 				<figure class="logo_principal">
-					<img src="img/logo.png">
+					<img class="img_logo" src="img/logo.png">
 				</figure>
 			</a>
-			<ul class="menu_global">
-				<li><a href="/software">SOFTWARE</a></li>
-				<li><a href="/broadband">BROADBAND</a></li>
-				<li><a href="/enterprice">ENTERPRICE</a></li>
-				<li><a href="/consume">CONSUMER</a></li>
-				<li><a href="/products">PRODUCTS</a></li>
-				<li><a href="/buy">BUY</a></li>
-			</ul>
-			<ul class="menu_principal">
-				<li><a href="/downloads">DOWNLOADS</a></li>
-				<li><a href="/support">SUPPORT</a></li>
-				<li><a href="/community">COMMUNITY</a></li>
-				<li>
-					<form action="/search" method="GET">
-						<input type="text" name="search">
-					</form>
-				</li>
-				<li><a>Buscar</a></li>
-			</ul>
+			<div class="menus">
+				<ul class="menu_global">
+					<li><a href="/software">SOFTWARE</a></li>
+					<li><a href="/broadband">BROADBAND</a></li>
+					<li><a href="/enterprice">ENTERPRICE</a></li>
+					<li><a href="/consume">CONSUMER</a></li>
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/buy">BUY</a></li>
+				</ul>
+				<ul class="menu_principal">
+					<li><a href="/downloads">DOWNLOADS</a></li>
+					<li><a href="/support">SUPPORT</a></li>
+					<li><a href="/community">COMMUNITY</a></li>
+					<li>
+						<form class="form_busqueda" action="/search" method="GET">
+							<input id="input_busqueda" class="input_busqueda " type="text" name="search">
+						</form>
+					</li>
+					<li><a id="icon_busqueda" class="icon_busqueda"></a></li>
+				</ul>
+			</div>
 		</nav>
-	</head>
+	</header>
 </body>
 </html>
